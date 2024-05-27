@@ -38,6 +38,8 @@ environments:
     value: "postgres"
   - key: "POSTGRES_PASSWORD"
     value: "random_password"
+  - key: "NEXTAUTH_SECRET"
+    value: "random_password-random_password-random_password"
   - key: "POSTGRES_HOST"
     value: "teable-db"
   - key: "POSTGRES_PORT"
