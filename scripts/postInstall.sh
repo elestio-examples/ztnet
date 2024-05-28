@@ -28,3 +28,7 @@ curl 'https://'${DOMAIN}'/api/trpc/auth.register?batch=1' \
   -H 'priority: u=1, i' \
   -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' \
   --data-raw '{"0":{"json":{"email":"'${ADMIN_EMAIL}'","password":"'${ADMIN_PASSWORD}'","name":"admin","ztnetInvitationCode":"","token":null},"meta":{"values":{"token":["undefined"]}}}}'
+
+
+
+docker-compose exec -T postgres psql -U postgres -d ztnet -c "UPDATE \"GlobalOptions\" SET \"smtpEmail\" = '${MAIL_SENDER}', \"smtpHost\" = '${MAIL_HOST}', \"smtpPort\" = '${MAIL_PORT}' WHERE id = '1';"
