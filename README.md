@@ -1,16 +1,16 @@
-# Teable CI/CD pipeline
+# ZTNET CI/CD pipeline
 
-<a href="https://dash.elest.io/deploy?source=cicd&social=dockerCompose&url=https://github.com/elestio-examples/teable"><img src="deploy-on-elestio.png" alt="Deploy on Elest.io" width="180px" /></a>
+<a href="https://dash.elest.io/deploy?source=cicd&social=dockerCompose&url=https://github.com/elestio-examples/ztnet"><img src="deploy-on-elestio.png" alt="Deploy on Elest.io" width="180px" /></a>
 
-Deploy Teable server with CI/CD on Elestio
+Deploy ZTNET server with CI/CD on Elestio
 
-<img src="teable.png" style='width: 100%;'/>
+<img src="ztnet.png" style='width: 100%;'/>
 <br/>
 <br/>
 
 # Once deployed ...
 
-You can open Teable ADMIN UI here:
+You can open ZTNET ADMIN UI here:
 
     URL: https://[CI_CD_DOMAIN]
     email: [ADMIN_EMAIL]

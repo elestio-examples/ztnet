@@ -41,8 +41,8 @@ services:
       - 172.17.0.1:49316:3000
     # - 127.0.0.1:3000:3000  <--- Use / Uncomment this line to restrict access to localhost only
     environment:
-      POSTGRES_HOST: postgres
-      POSTGRES_PORT: 5432
+      POSTGRES_HOST: ${POSTGRES_HOST}
+      POSTGRES_PORT: ${POSTGRES_PORT}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
@@ -54,9 +54,6 @@ services:
     depends_on:
       - postgres
       - zerotier
-  # volumes:
-  #   zerotier:
-  #   postgres-data:
 
   pgadmin:
     image: elestio/pgadmin:latest
